@@ -14,6 +14,16 @@
       "playerName": "ew",
       "level": 1,
       "treasure": 0
+    },
+    {
+      "playerName": "nutetrav",
+      "level": 15,
+      "treasure": 41001
+    },
+    {
+      "playerName": "balance2",
+      "level": 14,
+      "treasure": 21862
     }
   ]
 }

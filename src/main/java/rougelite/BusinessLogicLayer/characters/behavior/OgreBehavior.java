@@ -163,37 +163,30 @@ public class OgreBehavior implements EnemyBehavior {
             Random random = new Random();
             int chance = random.nextInt(100);
 
-            if (chance < 30) {
+            if (chance < 35) {
                 if (random.nextBoolean()) {
                     Weapon.WeaponType[] weaponTypes =
                             {
-                                    Weapon.WeaponType.BOW,
                                     Weapon.WeaponType.SHOTGUN,
                                     Weapon.WeaponType.MINIGUN,
-                                    Weapon.WeaponType.LASER,
-                                    Weapon.WeaponType.BLASTER,
                             };
                     Weapon weapon = new Weapon(weaponTypes[random.nextInt(weaponTypes.length)]);
                     weapon.setPosition(enemyType.getX(), enemyType.getY());
                     return weapon;
                 }
-            } else if (chance > 30 && chance < 60) {
+            } else if (chance > 35 && chance < 70) {
                 Ammo.AmmoType[] ammoTypes =
                         {
-                                Ammo.AmmoType.BOW_AMMUNITION,
                                 Ammo.AmmoType.SHOTGUN_AMMUNITION,
                                 Ammo.AmmoType.MINIGUN_AMMUNITION,
-                                Ammo.AmmoType.LASER_AMMUNITION,
-                                Ammo.AmmoType.BLASTER_AMMUNITION
                         };
                 Ammo ammo = new Ammo(ammoTypes[random.nextInt(ammoTypes.length)]);
                 ammo.setPosition(enemyType.getX(), enemyType.getY());
                 return ammo;
-            } else if (chance > 60 && chance < 80) {
+            } else if (chance > 70 && chance < 80) {
                 if (random.nextBoolean()) {
                     HealthPotion.HealthPotionType[] healthPotionTypes =
                             {
-                                    HealthPotion.HealthPotionType.AVERAGE_HEALTH,
                                     HealthPotion.HealthPotionType.BIG_HEALTH
                             };
                     HealthPotion potion = new HealthPotion(healthPotionTypes[random.nextInt(healthPotionTypes.length)]);

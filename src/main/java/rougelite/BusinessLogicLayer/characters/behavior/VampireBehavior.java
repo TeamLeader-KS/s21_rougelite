@@ -166,7 +166,7 @@ public class VampireBehavior implements EnemyBehavior {
             Random random = new Random();
             int chance = random.nextInt(100);
 
-            if (chance < 35) {
+            if (chance < 60) {
 
                 if (random.nextBoolean()) {
                     Weapon.WeaponType[] weaponTypes =
@@ -181,7 +181,7 @@ public class VampireBehavior implements EnemyBehavior {
                     weapon.setPosition(enemyType.getX(), enemyType.getY());
                     return weapon;
                 }
-            } else if (chance > 35 && chance < 70) {
+            } else if (chance > 60 && chance < 75) {
                 if (random.nextBoolean()) {
                     Ammo.AmmoType[] ammoTypes =
                             {

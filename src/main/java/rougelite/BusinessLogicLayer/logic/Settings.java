@@ -7,7 +7,7 @@ public class Settings {
 
     // ===== МНОЖИТЕЛИ ВРАГОВ =====
     public static final int ENEMY_HEALTH_MULTIPLIER = 20;
-    public static final int ENEMY_STRENGTH_MULTIPLIER = 2;
+    public static final int ENEMY_STRENGTH_MULTIPLIER = 1;
     public static final int ENEMY_DEXTERITY_MULTIPLIER = 5;
 
 }

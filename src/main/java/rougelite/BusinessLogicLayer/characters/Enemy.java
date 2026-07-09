@@ -40,10 +40,10 @@ public class Enemy extends Character {
     public enum EnemyType {
         ZOMBIE("Зомби", 15, 5, 5),
         VAMPIRE("Вампир", 100, 10, 35),
-        GHOST("Призрак", 50, 15, 15),
+        GHOST("Призрак", 10, 5, 15),
         OGRE("Огр", 200, 20, 10),
-        SNAKE_MAGE("Змеиный маг", 150, 25, 50),
-        BOSS("Владыка Тьмы", 10000, 60, 100);
+        SNAKE_MAGE("Змеиный маг", 150, 15, 50),
+        BOSS("Владыка Тьмы", 5000, 50, 100);
 
 
         private final String russianEnemyName;
@@ -94,7 +94,7 @@ public class Enemy extends Character {
     }
 
     public static int calculateStrength(EnemyType type, int level) {
-        return type.getinitialStrength() + ((level - 1) * Settings.ENEMY_STRENGTH_MULTIPLIER);
+        return type.getinitialStrength() + ((level - 1) + Settings.ENEMY_STRENGTH_MULTIPLIER);
     }
 
     public static int calculateDexterity(EnemyType type, int level) {

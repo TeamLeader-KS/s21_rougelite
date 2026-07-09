@@ -7,7 +7,7 @@ public abstract class Character {
     private String name;
     private int currentHealth;
     private int maxHealth;
-    private int levelUpHP = 20;
+    private int levelUpHP = 25;
     private int strength;
     private int levelUpStr = 5;
     private int dexterity;

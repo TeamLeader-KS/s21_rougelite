@@ -11,9 +11,9 @@ public class HealthPotion extends GameObject implements ObjectInfo, ConsumableIt
     private int healthPower;
 
     public enum HealthPotionType {
-        LOW_HEALTH("Малое зелье здоровья", 25),
-        AVERAGE_HEALTH("Среднее зелье здоровья", 50),
-        BIG_HEALTH("Большое зелье здоровья", 100);
+        LOW_HEALTH("Малое зелье здоровья", 50),
+        AVERAGE_HEALTH("Среднее зелье здоровья", 100),
+        BIG_HEALTH("Большое зелье здоровья", 200);
 
         private final String russianHealthPotionName;
         private final int healthPower;
